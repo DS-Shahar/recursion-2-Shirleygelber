@@ -66,8 +66,7 @@ public class Main {
 			return true;
 		}
 		if(arr[i]<=arr[i+1]) {
-			i+=1;
-			return ex17(i, arr);
+			return ex17(i+1, arr);
 		}
 		return false;
 	}
