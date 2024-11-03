@@ -33,15 +33,10 @@ public class Main {
 	
 	
 	public static int ex15(int i, int [] arr) {
-		if (i==0) {
-			if(arr[i]%2==0) {
-				return 1;
-			}
-			else {
-				return 0;
-			}
+		if (i==-1) {
+			return 0;
 		}
-		if(arr[i]%2!=0) {
+		if(arr[i]<=0) {
 			return ex15(i-1, arr);
 		}
 		return 1+ ex15(i-1, arr);
