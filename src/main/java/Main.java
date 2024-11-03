@@ -60,9 +60,6 @@ public class Main {
 	
 	public static boolean ex17(int i, int [] arr) {
 		if(i==arr.length-1) {
-			if(arr[i-1]>arr[i]) {
-				return false;
-			}
 			return true;
 		}
 		if(arr[i]<=arr[i+1]) {
